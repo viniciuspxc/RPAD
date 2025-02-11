@@ -1,0 +1,51 @@
+notas:
+
+---------
+problema
+
+
+pergunta: É possível prever a popularidade de uma musica? Até que idade deve ser estudada?
+motivo: pode ser usado por marketing, por spotify no algoritmo de recomendação.
+
+> pesquisaar literaturas sobre o problema
+
+variáveis dependente: o tempo de aprendizado, considerando até quantos anos há boa correlação; gênero; playlist
+
+aprendizagem de maquina: pode ser utilizado para encontrar a abrangência de datas mais uteis para estudo
+
+-----
+dados: 
+spotify dataset / o melhor dado é baseado em playlists
+convertendo high/low popularity em categorias
+
+describe()
+gráficos : correlação, popularidade por ano, popularidade por gênero
+normalização? não necessário para método em arvore
+> outlier? checar boxplot
+
+faltantes(nan) foram dropados
+dummy variables de atributos categóricos
+> possível fusão de dados com alta correlação
+dados desbalanceados = mais impopulares que populares
+
+--------
+métricas
+
+--------
+modelo
+usar mais de um modelo
+> modelo divisão binária (reg logística) (simples)
+> arvores aleatórias (medio)
+gradiente boost (avançado)
+
+múltiplas estratégias: dividir o dataset por anos e ir aumentado de 1 em 1 ano para ver os resultados na predição
+hiperparametros com grid search / conjunto de validação
+> armazenar resultadaos/metricas
+------
+resultados
+> tabela de resultados media + std
+> matriz de confusão
+> possiveis plots
+--------
+> exemplos de explicação
+
